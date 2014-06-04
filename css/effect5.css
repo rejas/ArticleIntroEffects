@@ -1,0 +1,157 @@
+/* -------------------------- */
+/* Side Fixed */
+/* -------------------------- */
+
+.intro-effect-sidefixed:not(.notrans) .bg-img::before {
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+}
+
+.intro-effect-sidefixed:not(.notrans) .bg-img::after {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+}
+
+.intro-effect-sidefixed:not(.notrans) .title p {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.intro-effect-sidefixed:not(.notrans) .content > div {
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.intro-effect-sidefixed:not(.notrans) .bg-img::before,
+.intro-effect-sidefixed:not(.notrans) .bg-img::after,
+.intro-effect-sidefixed:not(.notrans) .title p,
+.intro-effect-sidefixed:not(.notrans) .content > div {
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.intro-effect-sidefixed .header {
+    position: absolute;
+}
+
+.intro-effect-sidefixed .bg-img {
+    position: fixed;
+}
+
+.intro-effect-sidefixed .bg-img img {
+    left: auto;
+    right: 0;
+}
+
+.intro-effect-sidefixed .bg-img::before,
+.intro-effect-sidefixed .bg-img::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+}
+
+.intro-effect-sidefixed .bg-img::after {
+    background: #f8ebda;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.intro-effect-sidefixed.modify .bg-img::after {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.intro-effect-sidefixed .bg-img::before {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247,214,169,0.1);
+}
+
+.intro-effect-sidefixed.modify .bg-img::before {
+    background-color: rgba(247,214,169,0.4);
+}
+
+.intro-effect-sidefixed .codrops-demos a {
+    color: #f68f6c;
+}
+
+.intro-effect-sidefixed .title {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: left;
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+}
+
+.intro-effect-sidefixed.modify .title {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.intro-effect-sidefixed .title h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    padding: 0 0 0.5em 0;
+    color: #585a66;
+}
+
+.intro-effect-sidefixed .title p {
+    opacity: 0;
+    color: #585a66;
+}
+
+.intro-effect-sidefixed.modify .title p {
+    opacity: 1;
+}
+
+.intro-effect-sidefixed .content {
+    width: 60%;
+    margin-left: 40%;
+    padding: 0 2.5em;
+}
+
+.intro-effect-sidefixed .content div {
+    position: relative;
+    margin: 70px 0;
+    color: #77726b;
+}
+
+.intro-effect-sidefixed .content div:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+}
+
+.intro-effect-sidefixed.modify .content div:nth-child(2) {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+
+/* Delays */
+.intro-effect-sidefixed:not(.notrans) .title,
+.intro-effect-sidefixed:not(.notrans) .bg-img::before,
+.intro-effect-sidefixed:not(.notrans) .bg-img::after {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.intro-effect-sidefixed.modify:not(.notrans) .title,
+.intro-effect-sidefixed.modify:not(.notrans) .bg-img::before,
+.intro-effect-sidefixed.modify:not(.notrans) .bg-img::after {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.intro-effect-sidefixed.modify:not(.notrans) .content div:nth-child(2) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}

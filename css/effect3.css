@@ -1,0 +1,124 @@
+/* -------------------------- */
+/* Sliced */
+/* -------------------------- */
+
+.intro-effect-sliced:not(.notrans) .bg-img,
+.intro-effect-sliced:not(.notrans) .title {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+}
+
+.intro-effect-sliced:not(.notrans) .header h1,
+.intro-effect-sliced:not(.notrans) .codrops-demos a {
+    -webkit-transition-property: color;
+    transition-property: color;
+}
+
+.intro-effect-sliced:not(.notrans) .header p {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.intro-effect-sliced:not(.notrans) .content > div {
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.intro-effect-sliced:not(.notrans) .bg-img,
+.intro-effect-sliced:not(.notrans) .header h1,
+.intro-effect-sliced:not(.notrans) .title,
+.intro-effect-sliced:not(.notrans) .header p,
+.intro-effect-sliced:not(.notrans) .content > div,
+.intro-effect-sliced:not(.notrans) .codrops-demos a {
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.intro-effect-sliced.modify:not(.notrans) .header h1,
+.intro-effect-sliced.modify:not(.notrans) .title,
+.intro-effect-sliced.modify:not(.notrans) .header p,
+.intro-effect-sliced.modify:not(.notrans) .content > div,
+.intro-effect-sliced.modify:not(.notrans) .codrops-demos a {
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.intro-effect-sliced .bg-img:first-child {
+    bottom: 50%;
+}
+
+.intro-effect-sliced .bg-img:last-child {
+    top: 50%;
+    position: fixed;
+    z-index: 900;
+}
+
+.intro-effect-sliced .bg-img:last-child img {
+    top: -100%;
+}
+
+.intro-effect-sliced.modify .bg-img:first-child {
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+}
+
+.intro-effect-sliced.modify .bg-img:last-child {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.intro-effect-sliced .codrops-demos {
+    text-align: center;
+}
+
+.intro-effect-sliced .codrops-demos a {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.intro-effect-sliced.modify .codrops-demos a {
+    color: #cf4a5c;
+}
+
+.intro-effect-sliced .title {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.7);
+    transform: translateX(-50%) translateY(-50%) scale(0.7);
+}
+
+.intro-effect-sliced.modify .title {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.intro-effect-sliced .header p {
+    opacity: 0;
+    color: #514753;
+}
+
+.intro-effect-sliced.modify .header p {
+    opacity: 1;
+}
+
+.intro-effect-sliced.modify .header h1 {
+    color: #514753;
+}
+
+.intro-effect-sliced .content > div {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.intro-effect-sliced.modify .content > div {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Delays */
+.intro-effect-sliced.modify:not(.notrans) .title {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}

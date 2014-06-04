@@ -1,0 +1,107 @@
+/* -------------------------- */
+/* Faded gradient */
+/* -------------------------- */
+
+.intro-effect-fadeout:not(.notrans) .bg-img {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+}
+
+.intro-effect-fadeout:not(.notrans) .bg-img::after {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.intro-effect-fadeout:not(.notrans) .header h1 {
+    -webkit-transition-property: color;
+    transition-property: color;
+}
+
+.intro-effect-fadeout:not(.notrans) .header p,
+.intro-effect-fadeout:not(.notrans) .content > div {
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.intro-effect-fadeout:not(.notrans) .bg-img,
+.intro-effect-fadeout:not(.notrans) .bg-img::after,
+.intro-effect-fadeout:not(.notrans) .header h1,
+.intro-effect-fadeout:not(.notrans) .header p,
+.intro-effect-fadeout:not(.notrans) .content > div {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.intro-effect-fadeout .header {
+    overflow: hidden;
+}
+
+.intro-effect-fadeout.modify .bg-img {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+.intro-effect-fadeout .bg-img::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+.intro-effect-fadeout.modify .bg-img::after {
+    opacity: 1;
+}
+
+.intro-effect-fadeout .title {
+    text-align: left;
+    max-width: 900px;
+}
+
+.intro-effect-fadeout.modify .header h1,
+.intro-effect-fadeout .header p {
+    color: #514753;
+}
+
+.intro-effect-fadeout .header p {
+    opacity: 0;
+}
+
+.intro-effect-fadeout .header p:nth-child(2) {
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+}
+
+.intro-effect-fadeout .header p:nth-child(3) {
+    -webkit-transform: translateX(-150px);
+    transform: translateX(-150px);
+}
+
+.intro-effect-fadeout.modify .header p:nth-child(2),
+.intro-effect-fadeout.modify .header p:nth-child(3) {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.intro-effect-fadeout .content {
+    z-index: 1000;
+    position: relative;
+}
+
+.intro-effect-fadeout .content > div {
+    opacity: 0;
+    -webkit-transform: translateY(350px);
+    transform: translateY(350px);
+}
+
+.intro-effect-fadeout.modify .content > div {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}

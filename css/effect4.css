@@ -1,0 +1,165 @@
+/* -------------------------- */
+/* Side */
+/* -------------------------- */
+
+.intro-effect-side:not(.notrans) .bg-img::before,
+.intro-effect-side:not(.notrans) .title {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+}
+
+.intro-effect-side:not(.notrans) .bg-img::after {
+    -webkit-transition-property: top, left, bottom, right, background-color;
+    transition-property: top, left, bottom, right, background-color;
+}
+
+.intro-effect-side:not(.notrans) .header p {
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.intro-effect-side:not(.notrans) .content > div {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.intro-effect-side:not(.notrans) .bg-img::before,
+.intro-effect-side:not(.notrans) .bg-img::after,
+.intro-effect-side:not(.notrans) .title,
+.intro-effect-side:not(.notrans) .header p,
+.intro-effect-side:not(.notrans) .content > div {
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.intro-effect-side .codrops-top a {
+    color: #7b8d92;
+}
+
+.intro-effect-side .bg-img::before,
+.intro-effect-side .bg-img::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+}
+
+.intro-effect-side .bg-img::before {
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.intro-effect-side.modify .bg-img::before {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.intro-effect-side .bg-img::after {
+    border: 80px solid #fff;
+    top: -80px;
+    right: -80px;
+    bottom: -80px;
+    left: -80px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.intro-effect-side.modify .bg-img::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0);
+}
+
+.intro-effect-side .codrops-demos a {
+    color: #43939d;
+}
+
+.intro-effect-side .codrops-demos a.current-demo {
+    border-bottom: 3px solid #43939d;
+}
+
+.intro-effect-side .title {
+    text-align: right;
+    left: 0;
+    padding: 0 3em 0 2em;
+    width: 60%;
+    -webkit-transform: translateX(33.3%) translateY(-50%);
+    transform: translateX(33.3%) translateY(-50%);
+}
+
+.intro-effect-side.modify .title {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.intro-effect-side .header h1 {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 400;
+    padding: 0 0 0.5em 0;
+    color: #516165;
+}
+
+.intro-effect-side .header p {
+    opacity: 0;
+    color: #7b8d92;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+
+.intro-effect-side.modify .header p {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.intro-effect-side .content > div {
+    margin-top: 0px;
+    opacity: 0;
+}
+
+.intro-effect-side.modify .content > div {
+    opacity: 1;
+}
+
+.intro-effect-side button.trigger span::before,
+.intro-effect-side button.trigger::before {
+    color: #516165;
+}
+
+/* Delays */
+.intro-effect-side:not(.notrans) .title,
+.intro-effect-side:not(.notrans) .bg-img::before,
+.intro-effect-side:not(.notrans) .bg-img::after {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.intro-effect-side.modify:not(.notrans) .title,
+.intro-effect-side.modify:not(.notrans) .bg-img::before,
+.intro-effect-side.modify:not(.notrans) .bg-img::after {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.intro-effect-side.modify:not(.notrans) .header p:nth-last-child(2) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.intro-effect-side.modify:not(.notrans) .header p:last-child {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.intro-effect-side.modify:not(.notrans) .content > div {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}

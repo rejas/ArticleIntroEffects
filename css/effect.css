@@ -1,0 +1,71 @@
+/* -------------------------- */
+/* Push */
+/* -------------------------- */
+
+.intro-effect-push:not(.notrans) .header,
+.intro-effect-push:not(.notrans) > .title,
+.intro-effect-push:not(.notrans) .content > div {
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.intro-effect-push:not(.notrans) .header {
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    -webkit-transition-duration: 1.2s;
+    transition-duration: 1.2s;
+}
+
+.intro-effect-push .codrops-demos a {
+    color: #108576;
+}
+
+.intro-effect-push .header {
+    position: absolute;
+    z-index: 1500;
+}
+
+.intro-effect-push > .title {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 6em 1em 2em;
+}
+
+.intro-effect-push .content > div {
+    margin-top: 50px;
+    color: #b2b2c0;
+}
+
+.intro-effect-push > .title,
+.intro-effect-push .content > div {
+    -webkit-transform: translateY(400px);
+    transform: translateY(400px);
+    opacity: 0;
+}
+
+.intro-effect-push.modify > .title,
+.intro-effect-push.modify .content > div {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.intro-effect-push.modify .header {
+    opacity: 0;
+    -webkit-transform: translateY(-100%) scale(0.9);
+    transform: translateY(-100%) scale(0.9);
+}
+
+/* Delays */
+.intro-effect-push.modify:not(.notrans) > .title {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.intro-effect-push.modify:not(.notrans) .content > div {
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
