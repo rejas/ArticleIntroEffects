@@ -163,3 +163,31 @@
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
 }
+
+/* Media Queries */
+@media screen and (max-width: 47em) {
+
+    .intro-effect-side .title {
+        width: 100%;
+        padding: 0 1em;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .intro-effect-side.modify .bg-img::before {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    .intro-effect-side .bg-img::after {
+        border-left-width: 0px;
+        border-right-width: 0px;
+        right: 0px;
+        left: 0px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .intro-effect-side.modify .bg-img::after {
+        background: rgba(255, 255, 255, 0.8);
+    }
+}

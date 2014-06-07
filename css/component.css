@@ -194,10 +194,9 @@ button.trigger span::before {
 	content: '\201D';
 }
 
-/***** Individual effects *****/
-
 /* Media Queries */
 @media screen and (max-width: 47em) {
+
 	.title, .content {
 		font-size: 70%;
 	}
@@ -205,62 +204,15 @@ button.trigger span::before {
 	.codrops-demos a {
 		font-size: 80%;
 	}
-
-	.intro-effect-side .title {
-		width: 100%;
-		padding: 0 1em;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
-	}
-
-	.intro-effect-side.modify .bg-img::before {
-		-webkit-transform: translateX(-100%);
-		transform: translateX(-100%);
-	}
-
-	.intro-effect-side .bg-img::after {
-		border-left-width: 0px;
-		border-right-width: 0px;
-		right: 0px;
-		left: 0px;
-		background: rgba(255,255,255,0.1);
-	}
-
-	.intro-effect-side.modify .bg-img::after {
-		background: rgba(255,255,255,0.8);
-	}
-
-	.intro-effect-sidefixed .content {
-		width: 100%;
-		margin-left: auto;
-	}
-
-	.intro-effect-sidefixed .bg-img::after {
-		width: 95%;
-	}
-
 }
 
 @media screen and (max-width: 27em) {
-	.intro-effect-jam3 .content {
-		padding: 0 2em 5em;
-	}
 
-	.intro-effect-grid .grid li h2 {
-		display: none;
-	}
+    .title, .content {
+        font-size: 50%;
+    }
 
-	.intro-effect-push .header .title {
-		top: 60px;
-		-webkit-transform: translateX(-50%);
-		transform: translateX(-50%);
-	}
-
-	.title, .content {
-		font-size: 50%;
-	}
-
-	button.trigger::before {
-		display: none;
-	}
+    button.trigger::before {
+        display: none;
+    }
 }

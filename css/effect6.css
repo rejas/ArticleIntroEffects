@@ -216,3 +216,11 @@
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
 }
+
+/* Media Queries */
+@media screen and (max-width: 27em) {
+
+    .intro-effect-grid .grid li h2 {
+        display: none;
+    }
+}

@@ -69,3 +69,13 @@
     -webkit-transition-delay: 0.6s;
     transition-delay: 0.6s;
 }
+
+/* Media Queries */
+@media screen and (max-width: 27em) {
+
+    .intro-effect-push .header .title {
+        top: 60px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}

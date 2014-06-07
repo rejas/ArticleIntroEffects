@@ -145,3 +145,11 @@
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
+
+/* Media Queries */
+@media screen and (max-width: 27em) {
+
+    .intro-effect-jam3 .content {
+        padding: 0 2em 5em;
+    }
+}

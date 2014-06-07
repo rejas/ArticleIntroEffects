@@ -155,3 +155,16 @@
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s;
 }
+
+/* Media Queries */
+@media screen and (max-width: 47em) {
+
+    .intro-effect-sidefixed .content {
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .intro-effect-sidefixed .bg-img::after {
+        width: 95%;
+    }
+}
