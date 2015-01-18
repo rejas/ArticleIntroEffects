@@ -5,7 +5,7 @@ Some inspiration for article intro effects on headers and fullscreen images.
 
 [Article on Codrops](http://tympanus.net/codrops/?p=19119)
 
-[Demo](http://tympanus.net/Tutorials/ArticleIntroEffects/)
+[Demo](http://tympanus.net/Development/ArticleIntroEffects/)
 
 Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is". 
 
